@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import axios from "axios";
 import Recipe from "./Recipe.tsx";
-// import ('./routes');
 
-// function App() {
-//   <div>
-//     <Recipe></Recipe>
-//   </div>;
-// }
 
-// export default App;
 function App() {
 
   const [currentRecipe, setCurrentRecipe] = useState('egg' , 'https://via.placeholder.com/150' , ["egg" , "salt"] , ["boil eggs" , "put salt"] );
@@ -184,6 +176,7 @@ function App() {
                   <h3>Steps</h3>
                   <p>{currentRecipe.steps}</p>
                 </div>
+                
                 <button className="save-button" onClick={handlePreviousRecipe}>Previous Recipe</button>
                 <button className="save-button" onClick={handleNextRecipe}>Next Recipe</button>
                 
